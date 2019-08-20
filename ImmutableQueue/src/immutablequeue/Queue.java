@@ -7,7 +7,7 @@ package immutablequeue;
 
 /**
  *
- * @author taker
+ * @author Lukas Fam
  */
 public interface Queue<T> {
 
