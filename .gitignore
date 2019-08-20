@@ -13,3 +13,4 @@ nb-configuration.xml
 # Package Files #
 *.jar
 *.war
+/ImmutableQueue/nbproject/private/
