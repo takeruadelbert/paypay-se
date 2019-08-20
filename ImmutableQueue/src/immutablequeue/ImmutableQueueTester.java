@@ -15,6 +15,7 @@ public class ImmutableQueueTester {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // first init empty queue
         Queue<Integer> queue = new ImmutableQueue<Integer>();
         queue = queue.enQueue(1);
         queue = queue.enQueue(2);

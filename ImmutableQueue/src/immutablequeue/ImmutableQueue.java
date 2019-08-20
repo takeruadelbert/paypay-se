@@ -21,7 +21,7 @@ public final class ImmutableQueue<T> implements Queue<T> {
         this.reverse = new Stack<>();
     }
 
-    public ImmutableQueue(Stack<T> forward, Stack<T> reverse) {
+    private ImmutableQueue(Stack<T> forward, Stack<T> reverse) {
         this.forward = forward;
         this.reverse = reverse;
     }
@@ -81,15 +81,15 @@ public final class ImmutableQueue<T> implements Queue<T> {
             this.size = tail.size + 1;
         }
 
-        private boolean isEmpty() {
+        private final boolean isEmpty() {
             return this.size == 0;
         }
 
-        private Stack<T> push(T t) {
+        private final Stack<T> push(T t) {
             return new Stack<>(t, this);
         }
 
-        private Stack<T> reverseStack() {
+        private final Stack<T> reverseStack() {
             Stack<T> newStack = new Stack<>();
             Stack<T> tail = this;
             while (!tail.isEmpty()) {
