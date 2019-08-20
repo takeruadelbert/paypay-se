@@ -15,7 +15,15 @@ public class ImmutableQueueTester {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Queue<Integer> queue = new ImmutableQueue<Integer>();
+        queue = queue.enQueue(1);
+        queue = queue.enQueue(2);
+        queue = queue.enQueue(3);
+        queue = queue.deQueue();
+        System.out.println(queue.head());
+        queue = queue.deQueue();
+        System.out.println(queue.head());
+        queue = queue.deQueue();
     }
-    
+
 }
